@@ -34,6 +34,11 @@ angular
         controller: 'ShopCtrl',
         controllerAs: 'shop'
       })
+      .when('/warehouse', {
+        templateUrl: 'views/warehouse.html',
+        controller: 'WarehouseCtrl',
+        controllerAs: 'warehouse'
+      })
       .otherwise({
         redirectTo: '/'
       });
