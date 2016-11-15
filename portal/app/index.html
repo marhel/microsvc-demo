@@ -32,16 +32,16 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">portal</a>
+            <a ng-click="state.active = 'home'" class="navbar-brand" href="#/">µPortal</a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/shop">Webshop</a></li>
-              <li><a ng-href="#/warehouse">Warehouse</a></li>
+              <li ng-class="{active : state.active=='home'}"><a ng-click="state.active = 'home'" href="#/">Home</a></li>
+              <li ng-class="{active : state.active=='about'}"><a ng-click="state.active = 'about'" ng-href="#/about">About</a></li>
+              <li ng-class="{active : state.active=='webshop'}"><a ng-click="state.active = 'webshop'" ng-href="#/shop">Webshop</a></li>
+              <li ng-class="{active : state.active=='warehouse'}"><a ng-click="state.active = 'warehouse'" ng-href="#/warehouse">Warehouse</a></li>
             </ul>
           </div>
         </div>
