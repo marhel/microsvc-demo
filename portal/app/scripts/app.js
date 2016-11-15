@@ -30,12 +30,12 @@ angular
         controllerAs: 'about'
       })
       .when('/shop', {
-        templateUrl: 'views/shop.html',
+        templateUrl: 'webshop/views/shop.html',
         controller: 'ShopCtrl',
         controllerAs: 'shop'
       })
       .when('/warehouse', {
-        templateUrl: 'views/warehouse.html',
+        templateUrl: 'warehouse/views/warehouse.html',
         controller: 'WarehouseCtrl',
         controllerAs: 'warehouse'
       })

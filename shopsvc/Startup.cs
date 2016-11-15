@@ -38,6 +38,7 @@ namespace shopsvc
             loggerFactory.AddDebug();
 
             app.UseMvc();
+            app.UseStaticFiles();
         }
     }
 }

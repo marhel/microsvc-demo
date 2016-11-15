@@ -1,0 +1,16 @@
+shopsvc:
+  build: ./shopsvc
+  # image: shopsvc
+  ports:
+  - 5000:5000
+  labels:
+    com.factor10.splat.proxy: "webshop"
+    com.factor10.splat.proxy_port: "5000"
+
+proxy:
+  image: nginx:1.10
+  volumes:
+    - proxy_config:/etc/nginx/conf.d
+    - ./portal/dist:/www/data
+  ports:
+  - 80:80
