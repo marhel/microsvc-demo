@@ -14,6 +14,16 @@ body {
   padding: 0;
 }
 
+/* different colors for different eggs */
+.webshop {
+  background: #e0e000;
+}
+
+.warehouse {
+  background: #3030f0;
+  color:#e0e0e0
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
