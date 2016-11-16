@@ -1,4 +1,11 @@
 <form class="webshop form-inline">
+  <div ng-show="name" class="alert alert-success" role="alert">
+    {{name}} on {{host}} ({{operatingsystem}})
+  </div>
+  <button type="button" ng-click="getInfo()" class="btn btn-info">
+      <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Info
+  </button>
+  <p>
   <div class="form-group">
     <label for="inputItem">Item</label>
     <input type="text" class="form-control" id="inputItem" placeholder="DDD Book">

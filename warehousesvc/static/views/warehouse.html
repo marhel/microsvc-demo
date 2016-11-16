@@ -1,4 +1,11 @@
 <div class="warehouse">
+    <div ng-show="name" class="alert alert-success" role="alert">
+      {{name}} on {{host}} ({{operatingsystem}})
+    </div>
+    <button type="button" ng-click="getInfo()" class="btn btn-info">
+      <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Info
+    </button>
+    <p>
     <div class="form-group row">
       <label for="item" class="col-xs-2 col-form-label">Item</label>
       <div class="col-xs-10">
