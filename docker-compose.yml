@@ -1,10 +1,17 @@
 shopsvc:
   build: ./shopsvc
-  # image: shopsvc
   ports:
   - 5000
   labels:
     com.factor10.splat.proxy: "webshop"
+    com.factor10.splat.proxy_port: "5000"
+
+shippingsvc:
+  build: ./shippingsvc
+  ports:
+  - 5000
+  labels:
+    com.factor10.splat.proxy: "shipping"
     com.factor10.splat.proxy_port: "5000"
 
 warehousesvc:
