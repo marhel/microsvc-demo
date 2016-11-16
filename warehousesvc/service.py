@@ -17,7 +17,7 @@ def host():
 
 @app.route('/name')
 def name():
-    return jsonify("Python " + os.sys.version)
+    return jsonify("Python " + os.sys.version.split(" ")[0])
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
