@@ -39,7 +39,6 @@
 
             <ul class="nav navbar-nav">
               <li ng-class="{active : state.active=='home'}"><a ng-click="state.active = 'home'" href="#/">Home</a></li>
-              <li ng-class="{active : state.active=='about'}"><a ng-click="state.active = 'about'" ng-href="#/about">About</a></li>
               <li ng-class="{active : state.active=='webshop'}"><a ng-click="state.active = 'webshop'" ng-href="#/shop">Webshop</a></li>
               <li ng-class="{active : state.active=='warehouse'}"><a ng-click="state.active = 'warehouse'" ng-href="#/warehouse">Warehouse</a></li>
               <li ng-class="{active : state.active=='shipping'}"><a ng-click="state.active = 'shipping'" ng-href="#/shipping">Shipping</a></li>
@@ -88,7 +87,6 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
         <!-- endbuild -->
     <script src="webshop/scripts/controllers/shop.js"></script>
     <script src="warehouse/scripts/controllers/warehouse.js"></script>
